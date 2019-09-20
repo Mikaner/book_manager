@@ -2,14 +2,14 @@
 
 @section('title', 'Add')
 
-@section('menubar')
+@section('menuber')
     @parent
-    新規作成ページ
+    新規本追加ページ
 @endsection
 
 @section('content')
     <table>
-    <form action="/hello/add" method="post">
+    <form action="/main/add" method="post">
         {{ csrf_field() }}
         <tr><th>title: </th><td><input type="text" name="title"></td></tr>
         <tr><th>lending</th><td>

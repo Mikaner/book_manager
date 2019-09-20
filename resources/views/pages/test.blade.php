@@ -3,15 +3,15 @@
 @section('title', 'Index')
 @section('menuber')
     @parent
-    インデックスページ<br>
-    {{$view_message}}
+    インデックスページ
 @endsection
 
 @section('content')
     <table>
     <tr><th>Title</th><th>lending</th></tr>
-    @each ('components.item', $items, 'item')
+    @each('components.item', $items, 'item')
     </table>
+    @include('components.message', ['msg_title'=>'OK', 'msg_content'=>'サブビューです。'])
 @endsection
 
 @section('footer')

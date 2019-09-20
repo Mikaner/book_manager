@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('hello', 'PageController@index');
-Route::get('hello/add', 'PageController@add');
-Route::post('hello/add', 'PageController@create');
+Route::get('main', 'PageController@index');
+Route::get('main/add', 'PageController@add');
+Route::post('main/add', 'PageController@create');
+Route::get('main/login', 'PageController@login');
+Route::post('main/login', 'PageController@login_post');
+Route::get('test', 'PageController@test');
